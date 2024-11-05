@@ -5,9 +5,8 @@ if (isset($_POST['nombre'], $_POST['email'], $_POST['mensaje'])) {
     $mensaje = $_POST['mensaje'];
     
     echo "<h1>Gracias, $nombre</h1>";
-    echo "<p>Hemos recibido tu mensaje:</p>";
-    echo "<p>$mensaje</p>";
-    echo "<p>Nos pondremos en contacto contigo mediante tu correo $email</p>";
+    echo "<p>Hemos recibido tu mensaje</p>";
+    echo "<p>Nos pondremos en contacto contigo mediante el correo: $email</p>";
 } else {
     echo "Por favor, completa todos los campos.";
 }
@@ -21,6 +20,9 @@ if (isset($_POST['nombre'], $_POST['email'], $_POST['mensaje'])) {
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
+<style>footer { position: fixed; }</style>
+
 <body>
     <?php include 'navbar/navbar.php'; ?>
     <?php include 'footer/footer.php'; ?>

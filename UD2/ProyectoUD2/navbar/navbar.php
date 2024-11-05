@@ -1,4 +1,3 @@
-<!-- navbar.php -->
 <nav class="navbar">
     <div class="navbar-logo"><a href="index.php">PixelGames</a></div>
     <div class="navbar-search">
@@ -10,11 +9,10 @@
                 <li><a href="index.php">Inicio</a></li>
                 <li><a href="categorias.php">Categorías</a></li>
                 <li><a href="juegos.php">Juegos</a></li>
-                <li><a href="formulario.html">Contacto</a></li>
+                <li><a href="formulario.php">Contacto</a></li>
             </ul>
         </div>
         <div class="navbar-shopping-cart">
-            <!-- Carrito de compras-->
             <a href="carrito.php" class="navbar-icon"><i class="fas fa-shopping-cart"></i></a>
         </div>
     </div>

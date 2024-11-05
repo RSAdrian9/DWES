@@ -8,7 +8,6 @@
     </head>
 <body>
     <h1>Contacto</h1>
-    <?php include 'navbar/navbar.php'; ?>
     <form action="procesar_formulario.php" method="post">
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required><br>
@@ -18,8 +17,9 @@
         
         <label for="mensaje">Mensaje:</label>
         <textarea id="mensaje" name="mensaje" required></textarea><br>
-        
+    
         <input type="submit" value="Enviar">
     </form>
+    <button class="back-button" onclick="window.location.href='index.php'">Volver</button>
 </body>
 </html>
