@@ -1,0 +1,7 @@
+# Ignorar archivos de configuración de IDE
+.idea/
+.vscode/
+
+# Ignorar carpetas específicas
+# Carpeta creada por la extensión LivePHP
+views/
