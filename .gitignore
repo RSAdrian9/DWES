@@ -5,3 +5,5 @@
 # Ignorar carpetas específicas
 # Carpeta creada por la extensión LivePHP
 views/
+# Archivo creado por la extensión LivePHP
+index.php
