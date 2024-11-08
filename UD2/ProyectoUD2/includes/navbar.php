@@ -7,9 +7,9 @@
         <div class="navbar-links">
             <ul>
                 <li><a href="index.php">Inicio</a></li>
-                <li><a href="categorias.php">Categorías</a></li>
-                <li><a href="juegos.php">Juegos</a></li>
-                <li><a href="formulario.php">Contacto</a></li>
+                <li><a href="categories.php">Categorías</a></li>
+                <li><a href="games.php">Juegos</a></li>
+                <li><a href="contact.php">Contacto</a></li>
             </ul>
         </div>
         <div class="navbar-shopping-cart">

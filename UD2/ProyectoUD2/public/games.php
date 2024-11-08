@@ -1,5 +1,5 @@
 <?php
-include 'funciones.php';
+include __DIR__ . '/../includes/funciones.php';
 $productos = [
     ["nombre" => "Juego 1", "precio" => 50, "plataforma" => "PC"],
     ["nombre" => "Juego 2", "precio" => 60, "plataforma" => "PS4"],
@@ -13,12 +13,12 @@ $productos = [
 <head>
     <meta charset="UTF-8">
     <title>PixelGames - Tienda de Videojuegos</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
-    <?php include 'navbar/navbar.php'; ?>
+    <?php include __DIR__ . '/../includes/navbar.php'; ?>
     <h1>Lista de Videojuegos</h1>
     <ul>
         <?php foreach ($productos as $producto): ?>
@@ -30,7 +30,7 @@ $productos = [
             </li>
         <?php endforeach; ?>
     </ul>
-    <?php include 'footer/footer.php'; ?>
+    <?php include __DIR__ . '/../includes/footer.php'; ?>
 </body>
 
 </html>

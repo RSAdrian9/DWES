@@ -312,7 +312,7 @@ footer {
     text-align: center;
     font-size: 0.9em;
     border-top: 1px solid #f8b400; /* Línea de separación */
-    position: relative;          /* Fija el footer en la parte inferior */
+    position: relative;
     bottom: 0;                /* Posición en la parte inferior */
     width: 100%;              /* Ocupa todo el ancho de la pantalla */
     z-index: 1000;            /* Asegura que esté sobre otros elementos */
