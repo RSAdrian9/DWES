@@ -1,10 +1,10 @@
 <footer>
     <p>&copy; 2024 PixelGames. Todos los derechos reservados.</p>
     <p>
-    <a href="index.php">Inicio</a>
-    <a href="categorias.php">Categorías</a>
-    <a href="juegos.php">Juegos</a>
-    <a href="formulario.php">Contacto</a>
+    <a href="home.php">Inicio</a>
+    <a href="categories.php">Categorías</a>
+    <a href="games.php">Juegos</a>
+    <a href="contact.php">Contacto</a>
     </p>
     <div class="social-icons">
         <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
