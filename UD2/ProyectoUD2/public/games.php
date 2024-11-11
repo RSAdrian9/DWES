@@ -1,11 +1,4 @@
-<?php
-include __DIR__ . '/../includes/funciones.php';
-$productos = [
-    ["nombre" => "Juego 1", "precio" => 50, "plataforma" => "PC"],
-    ["nombre" => "Juego 2", "precio" => 60, "plataforma" => "PS4"],
-    ["nombre" => "Juego 3", "precio" => 40, "plataforma" => "Xbox"]
-];
-?>
+<?php include __DIR__ . '/../includes/functions.php'; ?>
 
 <!DOCTYPE html>
 <html lang="es">
@@ -20,16 +13,7 @@ $productos = [
 <body>
     <?php include __DIR__ . '/../includes/navbar.php'; ?>
     <h1>Lista de Videojuegos</h1>
-    <ul>
-        <?php foreach ($productos as $producto): ?>
-            <li class="list-games">
-                <?php
-                $precioConDescuento = aplicarDescuento($producto["precio"], 10);
-                echo "{$producto['nombre']} - {$producto['plataforma']} - Precio: $precioConDescuento €";
-                ?>
-            </li>
-        <?php endforeach; ?>
-    </ul>
+    
     <?php include __DIR__ . '/../includes/footer.php'; ?>
 </body>
 

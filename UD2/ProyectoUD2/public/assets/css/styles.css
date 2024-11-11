@@ -350,3 +350,60 @@ footer .social-icons a:hover {
     color: #50fa7b; /* Cambia de color en hover */
 }
 
+
+/* ---------------------------------------
+   PÁGINA CATEGORÍAS
+--------------------------------------- */
+
+/* Estructura general */
+.category-page {
+    padding: 20px;
+}
+
+.filters form {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* Estilos de categorías */
+.category-list .categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.category-card {
+    text-align: center;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+}
+
+.category-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Juegos destacados */
+.popular-games .games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.game-card {
+    text-align: center;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+}
+
+.game-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}

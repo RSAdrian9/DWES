@@ -10,7 +10,10 @@
 
 <body>
 
-    <?php include __DIR__ . '/../includes/navbar.php'; ?>
+    <?php 
+    include __DIR__ . '/../includes/navbar.php'; 
+    include __DIR__ . '/../includes/arrays.php';
+    ?>
 
     <h1>Bienvenido a PixelGames</h1>
     <p><?php echo date("l, d-m-Y H:i"); ?></p>
@@ -21,28 +24,20 @@
         <h2>Juegos Destacados</h2>
         <div class="grid-container">
             <?php
-            $juegos = [
-                ["titulo" => "The Legend of Zelda", "plataforma" => "Nintendo Switch", "precio" => 59.99, "imagen" => "assets/images/zelda.jpg"],
-                ["titulo" => "God of War", "plataforma" => "PlayStation 5", "precio" => 49.99, "imagen" => "assets/images/godofwar.jpg"],
-                ["titulo" => "Halo Infinite", "plataforma" => "Xbox Series X", "precio" => 39.99, "imagen" => "assets/images/halo.jpg"],
-                ["titulo" => "Minecraft", "plataforma" => "Multiplataforma", "precio" => 29.99, "imagen" => "assets/images/minecraft.jpg"],
-                ["titulo" => "Cyberpunk 2077", "plataforma" => "PC", "precio" => 44.99, "imagen" => "assets/images/cyberpunk.jpg"],
-                ["titulo" => "Fortnite", "plataforma" => "Multiplataforma", "precio" => 0.00, "imagen" => "assets/images/fortnite.jpg"]
-            ];
 
-            function mostrarJuegos($juegos)
+            function mostrarJuegos($games)
             {
-                foreach ($juegos as $juego) {
+                foreach ($games as $game) {
                     echo '<div class="grid-item">';
-                    echo '<img src="' . $juego["imagen"] . '" alt="' . $juego["titulo"] . '">';
-                    echo '<h3>' . $juego["titulo"] . '</h3>';
-                    echo '<p>Plataforma: ' . $juego["plataforma"] . '</p>';
-                    echo '<p>Precio: $' . number_format($juego["precio"], 2) . '</p>';
+                    echo '<img src="' . $game["imagen"] . '" alt="' . $game["titulo"] . '">';
+                    echo '<h3>' . $game["titulo"] . '</h3>';
+                    echo '<p>Plataforma: ' . $game["plataforma"] . '</p>';
+                    echo '<p>Precio: $' . number_format($game["precio"], 2) . '</p>';
                     echo '</div>';
                 }
             }
 
-            mostrarJuegos($juegos);
+            mostrarJuegos($games);
             ?>
         </div>
     </section>
