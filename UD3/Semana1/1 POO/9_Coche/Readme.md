@@ -35,5 +35,4 @@ Revisa los archivos en cada carpeta para entender cómo se implementan los conce
 
 ## Autor
 
-Francisco Carmona Lopez
-Curso de Desarrollo Web en Entorno Servidor (DWES)
+Adrián Ruiz Sánchez
