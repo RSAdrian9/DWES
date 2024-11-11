@@ -13,6 +13,7 @@
     <?php 
     include __DIR__ . '/../includes/navbar.php'; 
     include __DIR__ . '/../includes/arrays.php';
+    include __DIR__ . '/../includes/functions.php';
     ?>
 
     <h1>Bienvenido a PixelGames</h1>
@@ -25,19 +26,6 @@
         <h2>Juegos Destacados</h2>
         <div class="grid-container">
             <?php
-            // Función para mostrar los juegos en la cuadrícula
-            function mostrarJuegos($gamesHome)
-            {
-                foreach ($gamesHome as $game) {
-                    echo '<div class="grid-item">';
-                    echo '<img src="' . $game["image"] . '" alt="' . $game["title"] . '">';
-                    echo '<h3>' . $game["title"] . '</h3>';
-                    echo '<p>Plataforma: ' . $game["platform"] . '</p>';
-                    echo '<p>Precio: $' . number_format($game["price"], 2) . '</p>';
-                    echo '</div>';
-                }
-            }
-
             mostrarJuegos($gamesHome);
             ?>
         </div>

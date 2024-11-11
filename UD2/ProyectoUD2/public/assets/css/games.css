@@ -49,3 +49,17 @@ h1 , p {
     margin: 5px 0;
     color: #bfbfbf;
 }
+
+/* ------------------------------------------
+   PÁGINA - LISTA DE VIDEOJUEGOS - DESCUENTO
+--------------------------------------------- */
+
+.discounted-price {
+    color: #e74c3c; /* Color rojo para el precio con descuento */
+    font-weight: bold;
+}
+
+.original-price {
+    text-decoration: line-through; /* Tachado para el precio original */
+    color: #7f8c8d; /* Color gris para el precio original */
+}

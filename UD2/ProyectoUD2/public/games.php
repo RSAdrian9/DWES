@@ -28,23 +28,30 @@ foreach ($games as $game) {
     <?php include __DIR__ . '/../includes/navbar.php'; ?>
 
     <main class="games-page">
-    <h1>Juegos de <?php echo htmlspecialchars($categoriaSeleccionada); ?></h1>
-    <?php if (!empty($filteredGames)) : ?>
-        <div class="games-grid">
-            <?php foreach ($filteredGames as $game) : ?>
-                <div class="game-card">
-                    <img src="<?php echo htmlspecialchars($game['image']); ?>" alt="<?php echo htmlspecialchars($game['title']); ?>">
-                    <h3><?php echo htmlspecialchars($game['title']); ?></h3>
-                    <p>Género: <?php echo htmlspecialchars($game['genre']); ?></p>
-                    <p>Plataforma: <?php echo htmlspecialchars($game['platform']); ?></p>
-                    <p>Precio: $<?php echo number_format($game['price'], 2); ?></p>
-                </div>
-            <?php endforeach; ?>
-        </div>
-    <?php else : ?>
-        <p>No se encontraron juegos en esta categoría.</p>
-    <?php endif; ?>
-</main>
+        <h1>Juegos de <?php echo htmlspecialchars($categoriaSeleccionada); ?></h1>
+
+        <?php if (!empty($filteredGames)) : ?>
+            <div class="games-grid">
+                <?php foreach ($filteredGames as $game) :
+                    $descuento = 20;  // Definir un descuento del 10% (puedes hacerlo dinámico si lo deseas)
+                    $precioConDescuento = aplicarDescuento($game['price'], $descuento); // Aplicamos el descuento
+                ?>
+                    <div class="game-card">
+                        <img src="<?php echo htmlspecialchars($game['image']); ?>" alt="<?php echo htmlspecialchars($game['title']); ?>">
+                        <h3><?php echo htmlspecialchars($game['title']); ?></h3>
+                        <p>Género: <?php echo htmlspecialchars($game['genre']); ?></p>
+                        <p>Plataforma: <?php echo htmlspecialchars($game['platform']); ?></p>
+                        <p>Precio:
+                            <span class="original-price">$<?php echo number_format($game['price'], 2); ?></span>
+                            <span class="discounted-price">$<?php echo number_format($precioConDescuento, 2); ?></span>
+                        </p>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+        <?php else : ?>
+            <p>No se encontraron juegos en esta categoría.</p>
+        <?php endif; ?>
+    </main>
 
 
     <?php include __DIR__ . '/../includes/footer.php'; ?>
