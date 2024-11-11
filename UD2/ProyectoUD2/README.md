@@ -4,6 +4,17 @@
 
 PixelGames es una tienda online de videojuegos creada como proyecto educativo en PHP. El objetivo del proyecto es ofrecer una experiencia de navegación y consulta de videojuegos con categorías, visualización de detalles y una interfaz sencilla y amigable.
 
+## 📑 Índice
+
+##### [🚀 Características Principales](#-características-principales)
+##### [🧩 Estructura de Archivos](#-estructura-de-archivos)
+##### [📝 Descripción Técnica](#️-descripción-técnica)
+##### [🌐 Estilos y Diseño](#-estilos-y-diseño)
+##### [💡 Futuras mejoras](#-futuras-mejoras)
+##### [🔧 Instalación y Configuración](#-instalación-y-configuración)
+##### [🛠️ Tecnologías Usadas](#️-tecnologías-usadas)
+##### [📬 Contacto](#-contacto)
+
 ## 🚀 Características Principales
 
 - **Visualización de Juegos Destacados**: Muestra una selección de juegos destacados en la página principal.
