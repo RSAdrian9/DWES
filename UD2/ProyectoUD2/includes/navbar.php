@@ -8,7 +8,6 @@
             <ul>
                 <li><a href="index.php">Inicio</a></li>
                 <li><a href="categories.php">Categorías</a></li>
-                <li><a href="games.php">Juegos</a></li>
                 <li><a href="contact.php">Contacto</a></li>
             </ul>
         </div>

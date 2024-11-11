@@ -16,6 +16,7 @@
     ?>
 
     <h1>Bienvenido a PixelGames</h1>
+    <!-- Fecha y Hora -->
     <p><?php echo date("l, d-m-Y H:i"); ?></p>
     <p>En nuestra tienda encontrarás una gran variedad de videojuegos para todas las plataformas.</p>
 
@@ -24,20 +25,20 @@
         <h2>Juegos Destacados</h2>
         <div class="grid-container">
             <?php
-
-            function mostrarJuegos($games)
+            // Función para mostrar los juegos en la cuadrícula
+            function mostrarJuegos($gamesHome)
             {
-                foreach ($games as $game) {
+                foreach ($gamesHome as $game) {
                     echo '<div class="grid-item">';
-                    echo '<img src="' . $game["imagen"] . '" alt="' . $game["titulo"] . '">';
-                    echo '<h3>' . $game["titulo"] . '</h3>';
-                    echo '<p>Plataforma: ' . $game["plataforma"] . '</p>';
-                    echo '<p>Precio: $' . number_format($game["precio"], 2) . '</p>';
+                    echo '<img src="' . $game["image"] . '" alt="' . $game["title"] . '">';
+                    echo '<h3>' . $game["title"] . '</h3>';
+                    echo '<p>Plataforma: ' . $game["platform"] . '</p>';
+                    echo '<p>Precio: $' . number_format($game["price"], 2) . '</p>';
                     echo '</div>';
                 }
             }
 
-            mostrarJuegos($games);
+            mostrarJuegos($gamesHome);
             ?>
         </div>
     </section>

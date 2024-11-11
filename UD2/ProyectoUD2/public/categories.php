@@ -15,42 +15,38 @@
     include __DIR__ . '/../includes/arrays.php';
     ?>
 
-<main class="category-page">
-    <h1>Categorías de Juegos</h1>
-    <p>Selecciona una categoría para explorar juegos por género o consola.</p>
+    <main class="category-page">
+        <h1>Categorías de Juegos</h1>
+        <p>Selecciona una categoría para explorar juegos por género o consola.</p>
 
-    <div class="category-container">
-        <!-- Bloque de Géneros -->
-        <section class="genres-section">
-            <h2>Géneros</h2>
-            <div class="genres-grid">
-                <?php foreach ($genres as $genre) : ?>
-                    <div class="category-card">
-                        <img src="<?php echo $genre['image']; ?>" alt="<?php echo $genre['title']; ?>" class="category-image">
-                        <h3><?php echo $genre['title']; ?></h3>
-                        <p><?php echo $genre['description']; ?></p>
-                        <a href="juegos.php?categoria=<?php echo urlencode($genre['title']); ?>" class="btn-category">Explorar <?php echo $genre['title']; ?></a>
-                    </div>
-                <?php endforeach; ?>
-            </div>
-        </section>
+        <div class="category-container">
+            <!-- Bloque de Géneros -->
+            <section class="genres-section">
+                <h2>Géneros</h2>
+                <div class="genres-grid">
+                    <?php foreach ($genres as $genre) : ?>
+                        <div class="category-card">
+                            <h3><?php echo $genre['title']; ?></h3>
+                            <a href="games.php?categoria=<?php echo urlencode($genre['title']); ?>" class="btn-category">Explorar <?php echo $genre['title']; ?></a>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+            </section>
 
-        <!-- Bloque de Consolas -->
-        <section class="consoles-section">
-            <h2>Consolas</h2>
-            <div class="consoles-grid">
-                <?php foreach ($consoles as $console) : ?>
-                    <div class="category-card">
-                        <img src="<?php echo $console['image']; ?>" alt="<?php echo $console['title']; ?>" class="category-image">
-                        <h3><?php echo $console['title']; ?></h3>
-                        <p><?php echo $console['description']; ?></p>
-                        <a href="juegos.php?categoria=<?php echo urlencode($console['title']); ?>" class="btn-category">Explorar <?php echo $console['title']; ?></a>
-                    </div>
-                <?php endforeach; ?>
-            </div>
-        </section>
-    </div>
-</main>
+            <!-- Bloque de Consolas -->
+            <section class="consoles-section">
+                <h2>Consolas</h2>
+                <div class="consoles-grid">
+                    <?php foreach ($consoles as $console) : ?>
+                        <div class="category-card">
+                            <h3><?php echo $console['title']; ?></h3>
+                            <a href="games.php?categoria=<?php echo urlencode($console['title']); ?>" class="btn-category">Explorar <?php echo $console['title']; ?></a>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+            </section>
+        </div>
+    </main>
 
     <?php include __DIR__ . '/../includes/footer.php'; ?>
 </body>
