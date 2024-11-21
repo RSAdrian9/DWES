@@ -6,9 +6,9 @@
     <div class="navbar-links-shop">
         <div class="navbar-links">
             <ul>
-                <li><a href="index.php">Inicio</a></li>
-                <li><a href="categories.php">Categorías</a></li>
-                <li><a href="contact.php">Contacto</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="categories.php">Categories</a></li>
+                <li><a href="contact.php">Contact</a></li>
             </ul>
         </div>
         <div class="navbar-shopping-cart">

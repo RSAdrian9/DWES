@@ -16,11 +16,11 @@ class Persona {
     }
 }
 
-$bruno = new Persona(); // creamos un objeto
+$bruno = new Persona($nombre); // creamos un objeto
 $bruno->setNombre("Bruno Díaz"); // llamamos a su setter
 $bruno->imprimir(); // imprimimos
 
-$fran = new Persona(); // creamos otro objeto
+$fran = new Persona($nombre); // creamos otro objeto
 $fran->setNombre("Alejandro López"); // llamamos a su setter
 $fran->imprimir(); // imprimimos
 
