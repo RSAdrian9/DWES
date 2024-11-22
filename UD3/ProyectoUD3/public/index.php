@@ -3,6 +3,11 @@
 // Punto de entrada principal de la aplicación
 // ==========================================
 
+// Cargar configuraciones
+$config = require '../config/config.php';
+// Incluir el autoload (manual o de Composer)
+require_once '../app/autoload.php';
+
 require_once '../app/core/Router.php';
 require_once '../app/core/Controller.php';
 require_once '../app/core/Model.php';
