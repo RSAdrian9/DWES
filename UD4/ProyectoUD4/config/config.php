@@ -11,7 +11,7 @@ return [
     'environment' => 'development',
 
     // URL base del proyecto
-    'base_url' => 'http://localhost/dwes/EjemploProyectoUD3/public/',
+    'base_url' => 'http://localhost/dwes/ProyectoUD4/',
 
     // 2. Configuración de rutas
     'paths' => [
