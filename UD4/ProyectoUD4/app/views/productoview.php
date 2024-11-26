@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Gestión de Productos</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
@@ -50,6 +51,13 @@
         <?php endforeach; ?>
 
     </table>
+
+    <!-- Botón para descargar el PDF -->
+    <form action="http://localhost/dwes/UD4/ProyectoUD4/generar_pdf.php" method="get">
+        <button type="submit">Descargar PDF</button>
+    </form>
+
+
 </body>
 
 </html>
