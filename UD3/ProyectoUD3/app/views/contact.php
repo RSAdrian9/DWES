@@ -35,7 +35,7 @@
         </div>
     <?php endif; ?>
 
-    <form action="index.php?page=contact" method="post">
+    <form action="index.php?page=contact" method="post" onsubmit="return validarFormulario()">
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" value="<?php echo htmlspecialchars($nombre ?? ''); ?>" required><br>
 
@@ -53,5 +53,7 @@
 
     <?php include __DIR__ . '/shared/footer.php'; ?>
 </body>
+
+<script src="assets/js/validateformcontact.js"></script>
 
 </html>
