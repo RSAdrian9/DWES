@@ -1,6 +1,6 @@
-# Proyecto UD2
+# UD2 - PHP
 
-Este proyecto contiene el material de estudio y ejercicios correspondientes a la Unidad Didáctica 2 (UD2). A continuación, se describen los temas cubiertos en cada semana.
+Este directorio contiene el material de estudio y ejercicios correspondientes a la Unidad Didáctica 2 (UD2). A continuación, se describen los temas cubiertos en cada semana.
 
 ## Semana 1
 
