@@ -4,29 +4,28 @@ Este proyecto contiene varios archivos organizados para enseñar los conceptos b
 
 ## Índice
 
-- [Unidad 1](#unidad-1)
-  - [Archivos de la Unidad 1](#archivos-de-la-unidad-1)
-- [Unidad 2](#unidad-2)
-  - [Proyecto de la Unidad 2](#proyecto-de-la-unidad-2)
-  - [Semana 1](#semana-1)
-    - [Básico y Sintaxis](#basico-y-sintaxis)
-    - [Salida con Echo y Print](#salida-con-echo-y-print)
-    - [Datos y Funciones](#datos-y-funciones)
-    - [Resumen de la Semana](#resumen-de-la-semana)
-  - [Semana 2](#semana-2)
-    - [Control y Estructuras](#control-y-estructuras)
-    - [Funciones y Arrays](#funciones-y-arrays)
-  - [Semana 3](#semana-3)
-    - [Funciones Avanzadas](#funciones-avanzadas)
-    - [Inclusión de Ficheros](#inclusion-de-ficheros)
-    - [Arrays](#arrays)
-  - [Formularios](#formularios)
-    - [Formulario Básico](#formulario-basico)
-    - [Formularios con Métodos de Envío](#formularios-con-metodos-de-envio)
-      - [POST](#post)
-      - [GET](#get)
-      - [REQUEST](#request)
-      - [SELF](#self)
+- Unidad 1
+- Unidad 2
+  - Proyecto de la Unidad 2
+  - Semana 1
+    - Básico y Sintaxis
+    - Salida con Echo y Print
+    - Datos y Funciones
+    - Resumen de la Semana
+  - Semana 2
+    - Control y Estructuras
+    - Funciones y Arrays
+  - Semana 3
+    - Funciones Avanzadas
+    - Inclusión de Ficheros
+    - Arrays
+  - Formularios
+    - Formulario Básico
+    - Formularios con Métodos de Envío
+      - POST
+      - GET
+      - REQUEST
+      - SELF
 
 ---
 
