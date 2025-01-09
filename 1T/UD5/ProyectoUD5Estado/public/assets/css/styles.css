@@ -1,0 +1,216 @@
+/****************************************************
+ * Estilos globales
+ ****************************************************/
+
+/* Estilo global */
+body {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    font-family: 'Trebuchet MS';
+    text-align: center; /* Centrar texto global */
+}
+
+/* Encabezado */
+header {
+    background-color: var(--primary);
+    color: var(--background);
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Navegación */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+/* Contenido Principal */
+main {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    text-align: center; /* Centrar contenido del main */
+}
+
+/* Detalles de sesión */
+.session-details ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left; /* Si quieres que los detalles sigan alineados a la izquierda */
+}
+
+.session-details ul li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--muted);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--muted);
+    color: var(--foreground);
+    margin-top: 2rem;
+}
+
+/* Tablas */
+table {
+    width: 70%;
+    border-collapse: collapse;
+    border: 1px solid black;
+    margin: 1rem auto; /* Centrar tabla */
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid var(--muted);
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+/****************************************************
+ * Estilos para el formulario de inicio de sesión
+ ****************************************************/
+
+/* Estilo para el contenedor del formulario */
+form {
+    max-width: 400px;
+    margin: 2rem auto; /* Centrar formulario */
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para los inputs y labels */
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--primary);
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="submit"] {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--muted);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Estilo para el botón de enviar */
+form input[type="submit"] {
+    background-color: var(--primary);
+    color: #000000;
+    border: 1px solid;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: var(--primary-hover, #28a745);
+}
+
+/* Estilo para el título del formulario */
+h2 {
+    text-align: center;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+}
+
+/****************************************************
+ * Estilos para la paginación y logout
+ ****************************************************/
+
+/* Contenedor de paginación */
+.pagination {
+    display: flex;
+    justify-content: center; /* Centrar paginación */
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+/* Enlaces de paginación */
+.page-link {
+    text-decoration: none;
+    color: #007BFF; /* Color principal */
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 0.5rem 0.75rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Enlace activo */
+.page-link.active {
+    background-color: #007BFF;
+    color: white;
+    border-color: #007BFF;
+    font-weight: bold;
+}
+
+/* Hover en enlaces */
+.page-link:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+/* Botón de logout */
+.logout-button {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #FF4136;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+}
+
+/* Hover en logout */
+.logout-button:hover {
+    background-color: #c0392b;
+}
+
+/****************************************************
+ * Estilos para Crear y Editar Productos
+ ****************************************************/
+
+.gohome {
+    color: white;
+    background-color: #FF4136;
+}
+
+/* Responsividad para móviles */
+@media (max-width: 480px) {
+    form {
+        padding: 1rem;
+    }
+
+    form input[type="text"],
+    form input[type="password"],
+    form input[type="submit"] {
+        font-size: 0.9rem;
+    }
+}
