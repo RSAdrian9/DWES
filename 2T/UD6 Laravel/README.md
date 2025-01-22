@@ -12,7 +12,8 @@ UD6 - Laravel.
 │   ├── 1.- Fundamentos.
 │   ├── 2.- Blade.
 │   ├── 3.- MigracionesModel.
-|   └── 4.- Controladores.
+|   ├── 4.- Controladores.
+|   └── 5.- CRUD. 
 └── 2. ProyectoFPDual.
 ```
 
