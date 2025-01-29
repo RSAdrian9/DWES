@@ -4,6 +4,12 @@ Este directorio contiene el material de estudio y ejercicios correspondientes a 
 
 ---
 
+## Comandos para dependencias
+
+composer install (vendor)
+php artisan key:generate
+.env
+
 ## Árbol
 
 ```php
@@ -196,7 +202,6 @@ Laravel permite generar múltiples clases asociadas a un modelo usando opciones 
 
 ## Semana 3. (200125-240125).
 
-
 #### 4.- Controladores.
 
 Curso Profesional De LARAVEL. Enlace tutorial: [Episodio 4 - Controladores.
@@ -276,14 +281,26 @@ $users = DB::select('SELECT * FROM users');
 DB::insert('INSERT INTO users (...) VALUES (...)');
 ```
 
-**
-    Ventajas:** mayor control y flexibilidad.
+**Ventajas:** mayor control y flexibilidad.
 
-**
-    Desventajas:** menor integración con POO y dependencia de la estructura SQL.
+**Desventajas:** menor integración con POO y dependencia de la estructura SQL.
 
 #### 5.- CRUD.
 
 Curso Profesional De LARAVEL. Enlace tutorial: [Episodio 5 - CRUD.](https://youtu.be/T_9pKfj1dBI?si=V0RsNyawAOOTXYma)
+
+## Semana 4. (270125-310125).
+
+#### 7.- Seeder, Factory y Faker.
+
+Curso Profesional De LARAVEL. Enlace tutorial: [Episodio 7 - Seeder, Factory y Faker.](https://youtu.be/A-7_hQRX3yk?si=JbxLaxyG29WSCOY-)
+
+#### 8.- Relaciones.
+
+Curso Profesional De LARAVEL. Enlace tutorial: [Episodio 8 - Relaciones.](https://youtu.be/7B_Sbqq62Bc?si=Qb5IGUpOOUB-fCrO)
+
+Las relaciones van a ir en los modelos.
+
+php artisan migrate --> php artisan db:seed
 
 ### 2. ProyectoFPDual.
