@@ -303,4 +303,12 @@ Las relaciones van a ir en los modelos.
 
 php artisan migrate --> php artisan db:seed
 
+
+## Semana 5. (030225-070225).
+
+#### 6.- API REST.
+
+Curso Profesional De LARAVEL. Enlace tutorial: [Episodio 6 - API.](https://youtu.be/DvzLf1SMASo?si=bTS2Mp3c0Xm8d5Lu)
+
+
 ### 2. ProyectoFPDual.
