@@ -9,7 +9,7 @@ use App\Http\Controllers\ServiceController;
 Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
 
-/*
+
 Route::middleware('auth:sanctum')->group(function () {
     Route::post('/logout', [AuthController::class, 'logout']);
     Route::apiResource('clients', ClientController::class);
@@ -19,10 +19,11 @@ Route::middleware('auth:sanctum')->group(function () {
 Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:sanctum');
-*/
 
+/*
 Route::apiResource('clients', ClientController::class);
 Route::apiResource('services', ServiceController::class);
+*/
 
 //rutas para introducir un servicio a un cliente
 //de uno en uno

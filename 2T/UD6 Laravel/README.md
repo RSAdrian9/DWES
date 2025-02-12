@@ -19,7 +19,12 @@ UD6 - Laravel.
 │   ├── 2.- Blade.
 │   ├── 3.- MigracionesModel.
 |   ├── 4.- Controladores.
-|   └── 5.- CRUD. 
+|   ├── 5.- CRUD. 
+|   ├── 6.- API REST.
+|   ├── 7.- Seeder, Factory y Faker.
+|   ├── 8.- Relaciones.
+|   ├── 9.- Middleware y Autenticación API.
+|   └── 10.- Breeze.
 └── 2. ProyectoFPDual.
 ```
 
@@ -312,5 +317,11 @@ Curso Profesional De LARAVEL. Enlace tutorial: [Episodio 6 - API.](https://youtu
 #### 9.- Middleware y Autenticación API.
 
 Curso Profesional De LARAVEL. Enlace tutorial: [Episodio 9 - Middleware y Autenticación API.](https://youtu.be/57jtVRxWEMw?si=r2XvDYOBxokM8F6d)
+
+## Semana 6. (100225-140225).
+
+#### 10.-  BREEZE. (opcional)
+
+Curso Profesional De LARAVEL. Enlace tutorial: [Episodio 10 - AUTH, BREEZE Y JETSTREAM](https://youtu.be/nGd2875drGU?si=S9fpNfKdniVZUUUf)
 
 ### 2. ProyectoFPDual.
