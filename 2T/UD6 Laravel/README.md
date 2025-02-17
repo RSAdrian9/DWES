@@ -19,7 +19,7 @@ UD6 - Laravel.
 │   ├── 2.- Blade.
 │   ├── 3.- MigracionesModel.
 |   ├── 4.- Controladores.
-|   ├── 5.- CRUD. 
+|   ├── 5.- CRUD.
 |   ├── 6.- API REST.
 |   ├── 7.- Seeder, Factory y Faker.
 |   ├── 8.- Relaciones.
@@ -127,10 +127,12 @@ Este episodio del curso Profesional de Laravel aborda en detalle cómo trabajar 
 1. Creación de un proyecto Laravel sin starter kit:
 
    `laravel new modeldata`
+
 2. Configuración de la base de datos en el archivo `.env`.
 
    - Soporte para diferentes motores como MySQL y SQLite.
    - Configuración adicional en `/config/database.php`.
+
 3. Inicialización de migraciones con:
 
    `php artisan migrate`
@@ -140,6 +142,7 @@ Este episodio del curso Profesional de Laravel aborda en detalle cómo trabajar 
 - Creación de migraciones para definir la estructura de la base de datos.
 
   `php artisan make:migration create_notes_table`
+
 - Estructura básica de las clases de migración:
 
   - `up`: Define cómo crear la tabla.
@@ -149,14 +152,17 @@ Este episodio del curso Profesional de Laravel aborda en detalle cómo trabajar 
 
   - Métodos:`create`, `table`, `dropIfExists`, entre otros.
   - Nomenclatura recomendada: nombres de tablas en plural y en minúsculas.
+
 * Comandos útiles:
 
   - Migrar tablas:
 
     `php artisan migrate`
+
   - Rollback de migraciones:
 
     `php artisan migrate:rollback`
+
   - Resetear todas las migraciones:
 
     `php artisan migrate:reset`
@@ -170,6 +176,7 @@ Este episodio del curso Profesional de Laravel aborda en detalle cómo trabajar 
 1. Creación de un modelo:
 
    `php artisan make:model Note`
+
 2. Convenciones:
 
 - Los modelos deben estar en inglés, singular y con UpperCamelCase.
@@ -180,6 +187,7 @@ Este episodio del curso Profesional de Laravel aborda en detalle cómo trabajar 
 - Especificar manualmente el nombre de la tabla si no sigue la convención:
 
   `protected $table = 'notas'; `
+
 - Propiedades útiles en los modelos:
 
   - `$fillable`: Define qué campos son rellenables.
@@ -198,9 +206,11 @@ Laravel permite generar múltiples clases asociadas a un modelo usando opciones 
 - Modelo con migración:
 
   `php artisan make:model Flight --migration`
+
 - Modelo con factory, seeder y controlador:
 
   `php artisan make:model Flight --all`
+
 - Modelo para tablas pivote:
 
   `php artisan make:model Member --pivot `
@@ -218,43 +228,48 @@ En esta sección completamos el patrón MVC al integrar los controladores, explo
 
 ##### 2. Configuración inicial.
 
-* **Creación del proyecto.**
+- **Creación del proyecto.**
 
   Se utiliza Composer para crear un nuevo proyecto:
 
   `composer create-project laravel/laravel controllers`
-* **Configuración de base de datos.**
+
+- **Configuración de base de datos.**
 
   Actualizamos el archivo `.env` para vincular una base de datos MariaDB o MySQL.
-* **Modelado de datos.**
 
-  Se añaden columnas como `age`, `address`, y `zip_code` a la tabla `users` mediante migraciones. Los cambios son reflejados en el modelo `User.php`, actualizando la 		propiedad `$fillable`.
-* **Ejecución de migraciones.**
+- **Modelado de datos.**
+
+  Se añaden columnas como `age`, `address`, y `zip_code` a la tabla `users` mediante migraciones. Los cambios son reflejados en el modelo `User.php`, actualizando la propiedad `$fillable`.
+
+- **Ejecución de migraciones.**
 
   `php artisan migrate:refresh`
 
 ##### 3. Vinculación Ruta-Controlador-Vista.
 
-* **Creación del controlador.**
+- **Creación del controlador.**
 
   `php artisan make:controller UserController`
 
   Se define un método index en el controlador para devolver una vista.
-* **Rutas y vistas.**
+
+- **Rutas y vistas.**
 
   - Asociación de ruta y controlador en `routes/web.php`:
 
     `Route::get('/', [UserController::class, 'index'])->name('user.index');`
+
   - Vinculación del controlador con vistas usando Blade.
     (`resources/views/user/index.blade.php`).
 
 ##### 4. Manipulación de datos.
 
-* **Consultas con Eloquent.**
+- **Consultas con Eloquent.**
 
 Recuperación de datos usando User::all() y pasando resultados a vistas mediante compact.
 
-* **Inserción de datos.**
+- **Inserción de datos.**
 
 Métodos para crear registros:
 
@@ -266,7 +281,7 @@ Redirigir tras crear datos:
 
 `return redirect()->route('user.index');`
 
-* **Consultas avanzadas con Eloquent.**
+- **Consultas avanzadas con Eloquent.**
 
 Realización de búsquedas con filtros, ordenamientos y límites:
 
@@ -279,7 +294,7 @@ $users = User::where('age', '>=', 18)
 
 ##### 5. Consultas SQL RAW.
 
-* **Uso de consultas SQL directas mediante la clase DB:**
+- **Uso de consultas SQL directas mediante la clase DB:**
 
 ```php
 $users = DB::select('SELECT * FROM users');
@@ -320,8 +335,12 @@ Curso Profesional De LARAVEL. Enlace tutorial: [Episodio 9 - Middleware y Autent
 
 ## Semana 6. (100225-140225).
 
-#### 10.-  BREEZE. (opcional)
+#### 10.- BREEZE. (opcional)
 
 Curso Profesional De LARAVEL. Enlace tutorial: [Episodio 10 - AUTH, BREEZE Y JETSTREAM](https://youtu.be/nGd2875drGU?si=S9fpNfKdniVZUUUf)
+
+## Semana 7. (170225-210225).
+
+#### 11.- TESTING.urso Profesional De LARAVEL. Enlace tutorial: [Episodio 20 - TESTING](https://youtu.be/3xQt_tAj1e0?si=bjM8B3Tjkg8n1Xpv)
 
 ### 2. ProyectoFPDual.
